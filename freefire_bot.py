@@ -15,14 +15,13 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # আপনার টেলিগ্রাম বট টোকেন এনভায়রনমেন্ট ভেরিয়েবল থেকে নিন।
-# Render.com-এ যখন ডিপ্লয় করবেন, তখন এই '7940124369:AAHsl3z8awdJ7L651zSBUNbLeNO80eTTKdg' নামে এনভায়রনমেন্ট ভেরিয়েবল সেট করবেন।
+# Render.com-এ যখন ডিপ্লয় করবেন, তখন এই 'joy banhla'নামে এনভায়রনমেন্ট ভেরিয়েবল সেট করবেন।
 # লোকালি পরীক্ষা করার সময়, আপনি আপনার সিস্টেমের এনভায়রনমেন্ট ভেরিয়েবল হিসেবে এটি সেট করতে পারেন।
 TELEGRAM_BOT_TOKEN = os.environ.get("7940124369:AAHsl3z8awdJ7L651zSBUNbLeNO80eTTKdg")
 if not TELEGRAM_BOT_TOKEN:
     # যদি টোকেন না পাওয়া যায়, তাহলে এরর লগ করুন এবং প্রোগ্রাম বন্ধ করুন।
     logger.error("TELEGRAM_BOT_TOKEN environment variable not set. Exiting.")
     exit(1)
-
 # আপনার ফ্রি ফায়ার প্লেয়ার ইনফো API এর বেস URL
 # এই URL টি প্লেয়ারের তথ্য আনতে ব্যবহার করা হবে।
 PLAYER_INFO_API_BASE_URL = "https://aditya-info-v11op.onrender.com/player-info"
